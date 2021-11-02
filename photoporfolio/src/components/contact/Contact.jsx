@@ -3,8 +3,20 @@ import './Contact.css'
 import Phone from '../../img/phone.png'
 import Email from '../../img/email.png'
 import Address from '../../img/address.png'
+import { useRef, useContext } from 'react'
+import { ThemeContext } from '../../context'
 
 const Contact = () => {
+
+  const formRef = useRef()
+
+  const theme = useContext(ThemeContext)
+  const darkMode = theme.state.darkMode;
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
+
   return(
     <div className="c">
       <div className="c-bg"></div>
@@ -38,11 +50,11 @@ const Contact = () => {
             Get in touch. Always ready for freelancing
             if the right project comes along.
           </p>
-          <form>
-            <input type="text" placeholder="Name" name="user_name" />
-            <input type="text" placeholder="Subject" name="user_subject" />
-            <input type="text" placeholder="Email" name="user_email" />
-            <textarea row="5" placeholder="Message" name="message" />
+          <form ref={formRef} onSubmit={handleSubmit}>
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
+            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
+            <textarea style={{backgroundColor: darkMode && "#333"}} row="5" placeholder="Message" name="message" />
             <button>Submit</button>
           </form>
         </div>
