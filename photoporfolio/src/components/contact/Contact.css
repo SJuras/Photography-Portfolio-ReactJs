@@ -87,3 +87,26 @@ button {
 button:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 480px){
+
+  .c {
+    height: initial;
+  }
+
+  .c-wrapper {
+    flex-direction: column;
+  }
+
+  .c-title {
+    line-height: 60px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    margin-bottom: 24px;
+  }
+}

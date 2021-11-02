@@ -11,7 +11,8 @@ import Food from '../../img/food.jpg'
 import Wedding from '../../img/wedding.jpg'
 
 
-const ProductList = () => {
+
+const ProductList = (products) => {
   return(
     <div className="pl">
       <div className="pl-texts">
@@ -21,12 +22,12 @@ const ProductList = () => {
         </p>
       </div>
       <div className="pl-list">
-        <Product src={Hipster} />
-        <Product src={Girls} />
-        <Product src={Oil} />
-        <Product src={Mountain} />
-        <Product src={Food} />
-        <Product src={Wedding} />
+        <Product src={Hipster} title="Neos Fashion"/>
+        <Product src={Girls} title="Sarj Streetwear"/>
+        <Product src={Oil} title="Picard Winery"/>
+        <Product src={Mountain} title="Savaran Travel"/>
+        <Product src={Food} title="Lorenzo's Pizza"/>
+        <Product src={Wedding} title="Arjun Weddings"/>
       </div>
     </div>
   )

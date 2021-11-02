@@ -26,3 +26,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 480px){
+  .pl {
+    padding: 50px 24px;
+  }
+
+  .pl-title {
+    line-height: 54px;
+  }
+}

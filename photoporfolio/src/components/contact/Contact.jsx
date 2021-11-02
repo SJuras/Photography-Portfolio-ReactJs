@@ -34,7 +34,7 @@ const Contact = () => {
           <div className="c-info">
             <div className="c-info-item">
               <img src={Email} alt="" className="c-icon" />
-              <p>info@johnsondesign.com</p>
+              <p>info@connordesign.com</p>
             </div>
           </div>
           <div className="c-info">
@@ -57,6 +57,8 @@ const Contact = () => {
             <textarea style={{backgroundColor: darkMode && "#333"}} row="5" placeholder="Message" name="message" />
             <button>Submit</button>
           </form>
+          <p>&copy; johnconnordesign 2021.</p>
+          <p>Created by: Sarif Design</p>
         </div>
       </div>
     </div>

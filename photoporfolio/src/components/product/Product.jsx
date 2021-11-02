@@ -2,7 +2,7 @@ import React from 'react'
 import './Product.css'
 
 
-const Product = ({src}) => {
+const Product = ({src, title}) => {
   return(
     <div className="p">
       <div className="p-browser">
@@ -12,6 +12,7 @@ const Product = ({src}) => {
       </div>
       <div className="p-img-box">
         <img src={src} alt="" className="p-img" />
+        <h4>{title}</h4>
       </div>
     </div>
   )

@@ -65,6 +65,10 @@
   justify-content: space-between;
 }
 
+.a-award img {
+  margin-right: 16px;
+}
+
 .a-award-texts {
   width: 70%;
 }
@@ -73,4 +77,41 @@
   font-weight: bold;
   color: #555;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px){
+  .a {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    height: initial;
+  }
+
+  .a-left {
+    width: 100%;
+    min-height: 40vh;
+  }
+
+  .a-card {
+    height: 30vh;
+    width: 80%;
+  }
+
+  .a-card.bg {
+    display: none;
+  }
+
+  .a-right {
+    padding-right: 0px;
+    padding: 16px;
+  }
+
+  .a-award {
+    flex-direction: column;
+  }
+
+  .a-award img {
+    margin-bottom: 24px;
+    margin-right: 0px;
+  }
 }
