@@ -102,6 +102,10 @@ button:hover {
     line-height: 60px;
   }
 
+  .c-info-item {
+    width: 100%;
+  }
+
   input {
     width: 100%;
   }
